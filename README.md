@@ -1,29 +1,29 @@
 # Log Backup Script
 
-Detta är ett Bash-skript som automatiserar hantering av loggfiler.
+This is a Bash script that automates basic log file handling.
 
-## Vad skriptet gör
+## What the script does
 
-- Kontrollerar om mappen `logs_backup` finns
-- Skapar mappen om den saknas
-- Skapar 5 loggfiler: `logfile_1.log` till `logfile_5.log`
-- Kopierar alla `.log`-filer till `logs_backup`
-- Skriver ut ett bekräftelsemeddelande när allt är klart
+- Checks if the `logs_backup` directory exists
+- Creates the directory if it does not exist
+- Creates 5 log files: `logfile_1.log` to `logfile_5.log`
+- Copies all `.log` files to `logs_backup`
+- Prints a confirmation message when everything is done
 
-## Körning
+## Usage
 
-Ge skriptet körrättigheter:
+Give the script execute permission:
 
 ```bash
 chmod +x log_backup.sh
 ```
 
-Kör skriptet:
+Run the script:
 
 ```bash
 ./log_backup.sh
 ```
 
-## Kommentar
+## Note
 
-Loggfilerna ignoreras via `.gitignore`.
+Log files are ignored using `.gitignore`.
